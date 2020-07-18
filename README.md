@@ -21,6 +21,10 @@ this is a independent directory which can be run just by adding nlp_mod file and
 
 #### TO RUN ALL THESE CODE YOU HAVE TO INSTALL ALL MODULES IN REQUIREMENT.TXT
 
+### This is the flowchart showing how we have done the whole project step by step
+
+![](1.png)
+
 3. Report - as i mentioned above if you want to learn about each and every step whether it is Methodology, Visualization or data you can see the Report.pdf file.
 
 This research project was done by our team - 
