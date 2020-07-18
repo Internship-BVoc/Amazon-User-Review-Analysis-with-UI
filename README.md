@@ -27,6 +27,9 @@ this is a independent directory which can be run just by adding nlp_mod file and
 
 3. Report - as i mentioned above if you want to learn about each and every step whether it is Methodology, Visualization or data you can see the Report.pdf file.
 
+## code.rar 
+if you want to directly run the whole project, than just downlaod and extarct this archive and run _webpage.py_
+
 This research project was done by our team - 
 1. Shiva Baghel (Me)
 
