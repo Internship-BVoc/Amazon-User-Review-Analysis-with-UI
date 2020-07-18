@@ -1,4 +1,6 @@
-This is the most amamzing part of the research, to create a webpage and connect it to backend.
+#### This is the most amamzing part of the research, to create a webpage and connect it to backend.
+
+we chose to create a UI because, in today's world every one is more into easily thing not into how it is done.
 
 To do so a main.html was provided in the templates directory.
 
