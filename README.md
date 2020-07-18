@@ -1,8 +1,8 @@
 # Group-2-Parsing-Product-and-User-review-data-using-NLP
 
-The main objective of this research is to predict the Category of a particular given review.
+The main objective of this research is to predict the Category for a given review.
 
-Our research help a customer to search and choose a product of his/her choice very easily.
+Our research helps a customer to search and choose a product of his/her choice very easily.
 
 #### Want to more about the research just goto Report directory
 
