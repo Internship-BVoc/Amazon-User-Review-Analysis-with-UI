@@ -19,3 +19,15 @@ This file contains a code written in python, the webpage was generated using Fla
 The code has defined 5 buttons that performs prediction task when clicked.
 
 #### To run this code just visit UI directory.
+
+# nlp_mod.ipynb
+
+this Google Co-lab notebook has the whole work, what we done,
+* pre-processing
+* feature engineering (NLP)
+* Visualization
+* Model training (3 well known approaches)
+
+don't try to edit the code, but we you are a expert then just download the dataset(.csv) from below link 
+
+https://filebin.net/0uke9quk16j7vovt 
