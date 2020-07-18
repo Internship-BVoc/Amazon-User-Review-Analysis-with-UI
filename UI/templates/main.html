@@ -1,0 +1,338 @@
+<head>
+  <title>Amazon Review Analysis</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<title>\Product Analyser</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 10px;
+  text-align: center;
+  background: #000000;
+  color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
+  }
+
+}
+  input[type=submit]
+{
+  background-color: white;
+  color: black;
+  border: 2px solid #05fff5;
+  height:50px;
+  width:8%;
+}
+    input[type=submit]:hover {
+      background-color: #0ce7d5;
+      color: white;
+    }
+  table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  position: absolute;
+  top: 55%;
+  left: 15%;
+  width: 75%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<div style="background:yellow;padding:5px">
+  <h4 style="text-align:center">Parsing product and user review data.</h4>
+</div>
+
+<div class="header">
+  <h1>OUR REVIEWS</h1>
+  <p>WEBSITE CREATED BY TEAM#2.</p>
+</div>
+
+</body>
+<form action="/" method="get">
+<textarea name="revent" class="md-textarea form-control" style="position:relative; height:100px; width:700px; display:block; margin-left:auto; margin-right:auto;">{{ revtxt }}</textarea>
+<br/>
+<input type="submit" style="display:block; margin-left:75%;"/>
+</form>
+{% if score %}
+<table>
+  <tr>
+    <th>Sent/Words</th>
+    <th>Sentiment</th>
+  </tr>
+  <tr>
+    <td>Full Text </td>
+    <td>{{ score }}</td>
+  </tr>
+  {% for i in range(0,le,2)%}
+  <tr>
+    <td>{{ kd[i][0] }}</td>
+    <td>{{ kd[i][1] }}</td>
+  </tr>
+  {% endfor %}
+</table>
+  {% endif %}
+{% if ar %}
+<table>
+  <tr>
+    <th>Category</th>
+    <th>Score</th>
+  </tr>
+  {% for i in ar %}
+  <tr>
+    <td>{{ i[0] }}</td>
+    <td>{{ i[1] }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endif %}
+{% if kar %}
+<table>
+  <tr>
+    <th>Keywords</th>
+    <th>Score</th>
+  </tr>
+  {% for i in kar %}
+  <tr>
+    <td>{{ i[1] }}</td>
+    <td>{{ i[0] }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endif %}
+{% if comar %}
+<table>
+  <tr>
+    <th>Entity</th>
+  </tr>
+  {% for i in comar %}
+  <tr>
+    <td>{{ i }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endif %}
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.button1 {
+  background-color: white;
+  position:fixed;
+  left:0%;
+  top:74%;
+  color: black;
+  border: 2px solid #4CAF50;
+  height:50px;
+  width:7%;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  position:fixed;
+  left:0%;
+  top:74%;
+  color: white;
+}
+
+.button2 {
+  background-color: white;
+  color: black;
+  position:fixed;
+  left:0%;
+  top:50%;
+  border: 2px solid #008CBA;
+  height:50px;
+  width:7%;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  position:fixed;
+  left:0%;
+  top:50%;
+  color: white;
+
+}
+
+.button3 {
+  background-color: white;
+  position:fixed;
+  left:0%;
+  top:58%;
+  color: black;
+  border: 2px solid #f44336;
+  height:50px;
+  width:7%;
+}
+
+.button3:hover {
+  background-color: #f44336;
+  position:fixed;
+  left:0%;
+  top:58%;
+  color: white;
+}
+
+.button4 {
+  background-color: white;
+  position:fixed;
+  left:0%;
+  top:66%;
+  color: black;
+  border: 2px solid #e7e7e7;
+  height:50px;
+  width:7%
+}
+
+.button4:hover {
+  background-color: #e7e7e7;
+  position:fixed;
+  left:0%;
+  top:66%;}
+
+
+
+</style>
+</head>
+<img>
+
+<div class ="text-left">
+  <form action="/category/" method="get">
+<button class="button button2">Category</button>
+  </form>
+</div>
+<div class="text-left">
+  <form action="/keyword/" method="get">
+<button class="button button3">Keyword</button>
+  </form>
+</div>
+<div class="text-left">
+  <form action="/entity/" method="get">
+<button class="button button4">Companies</button>
+  </form>
+</div>
+<div class ="text-left">
+  <form action="/sentiment/" method="get">
+<button class="button button1" >Sentiments</button>
+  </form>
+</div>
+
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#mySidenav a {
+  position: absolute;
+  right: -80px;
+  transition: 0.3s;
+  padding: 12px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  right: 0;
+}
+
+#blog {
+  top: 25px;
+  background-color: #2196F3;
+}
+
+#projects {
+  top: 85px;
+  background-color: #f44336;
+}
+
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="#" id="blog">Members</a>
+  <a href="#" id="projects">Project</a>
+</div>
+
+<div style="margin-right:50px;">
+</div>
+</html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+</html>
