@@ -8,4 +8,4 @@ Now, open the webpage.py in a python compiler, and just run it, it will give you
 
 Finally, so see the what our webpage looks like.
 
-![](\UI\web.JPG)
+![](web.JPG)
