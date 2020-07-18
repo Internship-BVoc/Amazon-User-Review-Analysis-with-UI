@@ -21,7 +21,7 @@ this is a independent directory which can be run just by adding nlp_mod file and
 
 #### TO RUN ALL THESE CODE YOU HAVE TO INSTALL ALL MODULES IN REQUIREMENT.TXT
 
-### This is the flowchart showing how we have done the whole project step by step
+### This is the flowchart showing how we had done the whole project step by step
 
 ![](1.png)
 
