@@ -6,6 +6,6 @@ From Code directory just install the requirement.
 
 Now, open the webpage.py in a python compiler, and just run it, it will give you a link copy that and open it in any browser.
 
-Finally, so see the what our webpage looks like.
+Finally, this what our webpage looks like.
 
 ![](web.JPG)
