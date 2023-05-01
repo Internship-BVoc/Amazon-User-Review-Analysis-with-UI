@@ -1,5 +1,5 @@
 
-Flask==1.1.2
+Flask==2.3.2
 flask-ngrok==0.0.25
 gensim==3.8.3
 Morfessor==2.0.6
